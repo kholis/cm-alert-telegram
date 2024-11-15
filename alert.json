@@ -1,0 +1,143 @@
+[ {
+  "body" : {
+    "alert" : {
+      "content" : "The health test result for MAPREDUCE_HA_JOB_TRACKER_HEALTH has become bad: JobTracker summary: myCluster.com (Availability: Active, Health: Bad). This health test reflects the health of the active JobTracker.",
+      "timestamp" : {
+        "iso8601" : "2015-06-11T03:52:56Z",
+        "epochMs" : 1433994776083
+      },
+      "source" : "http://myCluster.com:7180/cmf/eventRedirect/89521139-0859-4bef-bf65-eb141e63dbba",
+      "attributes" : {
+        "__persist_timestamp" : [ "1433994776172" ],
+        "ALERT_SUPPRESSED" : [ "false" ],
+        "HEALTH_TEST_NAME" : [ "MAPREDUCE_HA_JOB_TRACKER_HEALTH" ],
+        "SEVERITY" : [ "CRITICAL" ],
+        "HEALTH_TEST_RESULTS" : [ {
+          "content" : "The health test result for MAPREDUCE_HA_JOB_TRACKER_HEALTH has become bad: JobTracker summary: myCluster.com (Availability: Active, Health: Bad). This health test reflects the health of the active JobTracker.",
+          "testName" : "MAPREDUCE_HA_JOB_TRACKER_HEALTH",
+          "eventCode" : "EV_SERVICE_HEALTH_CHECK_BAD",
+          "severity" : "CRITICAL"
+        } ],
+        "CLUSTER_DISPLAY_NAME" : [ "Cluster 1" ],
+        "ALERT" : [ "true" ],
+        "CATEGORY" : [ "HEALTH_CHECK" ],
+        "BAD_TEST_RESULTS" : [ "1" ],
+        "SERVICE_TYPE" : [ "MAPREDUCE" ],
+        "EVENTCODE" : [ "EV_SERVICE_HEALTH_CHECK_BAD", "EV_SERVICE_HEALTH_CHECK_GOOD" ],
+        "ALERT_SUMMARY" : [ "The health of service MAPREDUCE-1 has become bad." ],
+        "CLUSTER_ID" : [ "1" ],
+        "SERVICE" : [ "MAPREDUCE-1" ],
+        "__uuid" : [ "89521139-0859-4bef-bf65-eb141e63dbba" ],
+        "CLUSTER" : [ "Cluster 1" ],
+        "CURRENT_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for MAPREDUCE_HA_JOB_TRACKER_HEALTH has become bad: JobTracker summary: myCluster.com (Availability: Active, Health: Bad). This health test reflects the health of the active JobTracker.\",\"testName\":\"MAPREDUCE_HA_JOB_TRACKER_HEALTH\",\"eventCode\":\"EV_SERVICE_HEALTH_CHECK_BAD\",\"severity\":\"CRITICAL\"}", "{\"content\":\"The health test result for MAPREDUCE_TASK_TRACKERS_HEALTHY has become good: Healthy TaskTracker: 3. Concerning TaskTracker: 0. Total TaskTracker: 3. Percent healthy: 100.00%. Percent healthy or concerning: 100.00%.\",\"testName\":\"MAPREDUCE_TASK_TRACKERS_HEALTHY\",\"eventCode\":\"EV_SERVICE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}" ],
+        "PREVIOUS_HEALTH_SUMMARY" : [ "GREEN" ],
+        "CURRENT_HEALTH_SUMMARY" : [ "RED" ],
+        "MONITOR_STARTUP" : [ "false" ],
+        "PREVIOUS_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for MAPREDUCE_HA_JOB_TRACKER_HEALTH has become good: JobTracker summary: myCluster.com (Availability: Active, Health: Good)\",\"testName\":\"MAPREDUCE_HA_JOB_TRACKER_HEALTH\",\"eventCode\":\"EV_SERVICE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for MAPREDUCE_TASK_TRACKERS_HEALTHY has become good: Healthy TaskTracker: 3. Concerning TaskTracker: 0. Total TaskTracker: 3. Percent healthy: 100.00%. Percent healthy or concerning: 100.00%.\",\"testName\":\"MAPREDUCE_TASK_TRACKERS_HEALTHY\",\"eventCode\":\"EV_SERVICE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}" ],
+        "SERVICE_DISPLAY_NAME" : [ "MAPREDUCE-1" ]
+      }
+    }
+  },
+  "header" : {
+    "type" : "alert",
+    "version" : 2
+  }
+}, {
+  "body" : {
+    "alert" : {
+      "content" : "The health test result for JOB_TRACKER_SCM_HEALTH has become bad: This role's process exited. This role is supposed to be started.",
+      "timestamp" : {
+        "iso8601" : "2015-06-11T03:52:56Z",
+        "epochMs" : 1433994776083
+      },
+      "source" : "http://myCluster.com:7180/cmf/eventRedirect/67b4d1c4-791b-428e-a9ea-8a09d4885f5d",
+      "attributes" : {
+        "__persist_timestamp" : [ "1433994776173" ],
+        "ALERT_SUPPRESSED" : [ "false" ],
+        "HEALTH_TEST_NAME" : [ "JOB_TRACKER_SCM_HEALTH" ],
+        "SEVERITY" : [ "CRITICAL" ],
+        "ROLE" : [ "MAPREDUCE-1-JOBTRACKER-10624c438dee9f17211d3f33fa899957" ],
+        "HEALTH_TEST_RESULTS" : [ {
+          "content" : "The health test result for JOB_TRACKER_SCM_HEALTH has become bad: This role's process exited. This role is supposed to be started.",
+          "testName" : "JOB_TRACKER_SCM_HEALTH",
+          "eventCode" : "EV_ROLE_HEALTH_CHECK_BAD",
+          "severity" : "CRITICAL"
+        } ],
+        "CLUSTER_DISPLAY_NAME" : [ "Cluster 1" ],
+        "HOST_IDS" : [ "75e763c2-8d22-47a1-8c80-501751ae0db7" ],
+        "ALERT" : [ "true" ],
+        "ROLE_TYPE" : [ "JOBTRACKER" ],
+        "CATEGORY" : [ "HEALTH_CHECK" ],
+        "BAD_TEST_RESULTS" : [ "1" ],
+        "SERVICE_TYPE" : [ "MAPREDUCE" ],
+        "EVENTCODE" : [ "EV_ROLE_HEALTH_CHECK_BAD", "EV_ROLE_HEALTH_CHECK_GOOD", "EV_ROLE_HEALTH_CHECK_DISABLED" ],
+        "ALERT_SUMMARY" : [ "The health of role jobtracker (nightly-1) has become bad." ],
+        "CLUSTER_ID" : [ "1" ],
+        "SERVICE" : [ "MAPREDUCE-1" ],
+        "__uuid" : [ "67b4d1c4-791b-428e-a9ea-8a09d4885f5d" ],
+        "CLUSTER" : [ "Cluster 1" ],
+        "CURRENT_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for JOB_TRACKER_SCM_HEALTH has become bad: This role's process exited. This role is supposed to be started.\",\"testName\":\"JOB_TRACKER_SCM_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_BAD\",\"severity\":\"CRITICAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become good: This role encountered 0 unexpected exit(s) in the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_UNEXPECTED_EXITS\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_FILE_DESCRIPTOR has become good: Open file descriptors: 244. File descriptor limit: 32,768. Percentage in use: 0.74%.\",\"testName\":\"JOB_TRACKER_FILE_DESCRIPTOR\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_SWAP_MEMORY_USAGE has become good: 0 B of swap memory is being used by this role's process.\",\"testName\":\"JOB_TRACKER_SWAP_MEMORY_USAGE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE has become good: This role's Log Directory (/var/log/hadoop-0.20-mapreduce) is on a filesystem with more than 20.00% of its space free.\",\"testName\":\"JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HOST_HEALTH has become good: The health of this role's host is good.\",\"testName\":\"JOB_TRACKER_HOST_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_WEB_METRIC_COLLECTION has become good: The web server of this role is responding with metrics. The most recent collection took 49 millisecond(s).\",\"testName\":\"JOB_TRACKER_WEB_METRIC_COLLECTION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_GC_DURATION has become good: Average time spent in garbage collection was 0 second(s) (0.00%) per minute over the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_GC_DURATION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE has become disabled: Test disabled because role is not configured to dump heap when out of memory. Test of whether this role's heap dump directory has enough free space.\",\"testName\":\"JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_DISABLED\",\"severity\":\"INFORMATIONAL\"}" ],
+        "CURRENT_HEALTH_SUMMARY" : [ "RED" ],
+        "PREVIOUS_HEALTH_SUMMARY" : [ "GREEN" ],
+        "MONITOR_STARTUP" : [ "false" ],
+        "ROLE_DISPLAY_NAME" : [ "jobtracker (nightly-1)" ],
+        "PREVIOUS_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for JOB_TRACKER_SCM_HEALTH has become good: This role's status is as expected. The role is started.\",\"testName\":\"JOB_TRACKER_SCM_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become good: This role encountered 0 unexpected exit(s) in the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_UNEXPECTED_EXITS\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_FILE_DESCRIPTOR has become good: Open file descriptors: 244. File descriptor limit: 32,768. Percentage in use: 0.74%.\",\"testName\":\"JOB_TRACKER_FILE_DESCRIPTOR\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_SWAP_MEMORY_USAGE has become good: 0 B of swap memory is being used by this role's process.\",\"testName\":\"JOB_TRACKER_SWAP_MEMORY_USAGE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE has become good: This role's Log Directory (/var/log/hadoop-0.20-mapreduce) is on a filesystem with more than 20.00% of its space free.\",\"testName\":\"JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HOST_HEALTH has become good: The health of this role's host is good.\",\"testName\":\"JOB_TRACKER_HOST_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_WEB_METRIC_COLLECTION has become good: The web server of this role is responding with metrics. The most recent collection took 49 millisecond(s).\",\"testName\":\"JOB_TRACKER_WEB_METRIC_COLLECTION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_GC_DURATION has become good: Average time spent in garbage collection was 0 second(s) (0.00%) per minute over the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_GC_DURATION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE has become disabled: Test disabled because role is not configured to dump heap when out of memory. Test of whether this role's heap dump directory has enough free space.\",\"testName\":\"JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_DISABLED\",\"severity\":\"INFORMATIONAL\"}" ],
+        "SERVICE_DISPLAY_NAME" : [ "MAPREDUCE-1" ],
+        "HOSTS" : [ "myCluster.com" ]
+      }
+    }
+  },
+  "header" : {
+    "type" : "alert",
+    "version" : 2
+  }
+}, {
+  "body" : {
+    "alert" : {
+      "content" : "The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become bad: This role encountered 1 unexpected exit(s) in the previous 5 minute(s).This included 1 exit(s) due to OutOfMemory errors. Critical threshold: any.",
+      "timestamp" : {
+        "iso8601" : "2015-06-11T03:53:41Z",
+        "epochMs" : 1433994821940
+      },
+      "source" : "http://myCluster.com:7180/cmf/eventRedirect/b8c4468d-08c2-4b5b-9bda-2bef892ba3f5",
+      "attributes" : {
+        "__persist_timestamp" : [ "1433994822027" ],
+        "ALERT_SUPPRESSED" : [ "false" ],
+        "HEALTH_TEST_NAME" : [ "JOB_TRACKER_UNEXPECTED_EXITS" ],
+        "SEVERITY" : [ "CRITICAL" ],
+        "ROLE" : [ "MAPREDUCE-1-JOBTRACKER-10624c438dee9f17211d3f33fa899957" ],
+        "HEALTH_TEST_RESULTS" : [ {
+          "content" : "The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become bad: This role encountered 1 unexpected exit(s) in the previous 5 minute(s).This included 1 exit(s) due to OutOfMemory errors. Critical threshold: any.",
+          "testName" : "JOB_TRACKER_UNEXPECTED_EXITS",
+          "eventCode" : "EV_ROLE_HEALTH_CHECK_BAD",
+          "severity" : "CRITICAL"
+        } ],
+        "CLUSTER_DISPLAY_NAME" : [ "Cluster 1" ],
+        "HOST_IDS" : [ "75e763c2-8d22-47a1-8c80-501751ae0db7" ],
+        "ALERT" : [ "true" ],
+        "ROLE_TYPE" : [ "JOBTRACKER" ],
+        "CATEGORY" : [ "HEALTH_CHECK" ],
+        "BAD_TEST_RESULTS" : [ "1" ],
+        "SERVICE_TYPE" : [ "MAPREDUCE" ],
+        "EVENTCODE" : [ "EV_ROLE_HEALTH_CHECK_BAD", "EV_ROLE_HEALTH_CHECK_GOOD", "EV_ROLE_HEALTH_CHECK_DISABLED" ],
+        "ALERT_SUMMARY" : [ "The health of role jobtracker (nightly-1) has become bad." ],
+        "CLUSTER_ID" : [ "1" ],
+        "SERVICE" : [ "MAPREDUCE-1" ],
+        "__uuid" : [ "b8c4468d-08c2-4b5b-9bda-2bef892ba3f5" ],
+        "CLUSTER" : [ "Cluster 1" ],
+        "CURRENT_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for JOB_TRACKER_SCM_HEALTH has become bad: This role's process exited. This role is supposed to be started.\",\"testName\":\"JOB_TRACKER_SCM_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_BAD\",\"severity\":\"CRITICAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become bad: This role encountered 1 unexpected exit(s) in the previous 5 minute(s).This included 1 exit(s) due to OutOfMemory errors. Critical threshold: any.\",\"testName\":\"JOB_TRACKER_UNEXPECTED_EXITS\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_BAD\",\"severity\":\"CRITICAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_FILE_DESCRIPTOR has become good: Open file descriptors: 244. File descriptor limit: 32,768. Percentage in use: 0.74%.\",\"testName\":\"JOB_TRACKER_FILE_DESCRIPTOR\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_SWAP_MEMORY_USAGE has become good: 0 B of swap memory is being used by this role's process.\",\"testName\":\"JOB_TRACKER_SWAP_MEMORY_USAGE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE has become good: This role's Log Directory (/var/log/hadoop-0.20-mapreduce) is on a filesystem with more than 20.00% of its space free.\",\"testName\":\"JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HOST_HEALTH has become good: The health of this role's host is good.\",\"testName\":\"JOB_TRACKER_HOST_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_WEB_METRIC_COLLECTION has become good: The web server of this role is responding with metrics. The most recent collection took 49 millisecond(s).\",\"testName\":\"JOB_TRACKER_WEB_METRIC_COLLECTION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_GC_DURATION has become good: Average time spent in garbage collection was 0 second(s) (0.00%) per minute over the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_GC_DURATION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE has become disabled: Test disabled because role is not configured to dump heap when out of memory. Test of whether this role's heap dump directory has enough free space.\",\"testName\":\"JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_DISABLED\",\"severity\":\"INFORMATIONAL\"}" ],
+        "CURRENT_HEALTH_SUMMARY" : [ "RED" ],
+        "PREVIOUS_HEALTH_SUMMARY" : [ "RED" ],
+        "MONITOR_STARTUP" : [ "false" ],
+        "ROLE_DISPLAY_NAME" : [ "jobtracker (nightly-1)" ],
+        "PREVIOUS_COMPLETE_HEALTH_TEST_RESULTS" : [ "{\"content\":\"The health test result for JOB_TRACKER_SCM_HEALTH has become bad: This role's process exited. This role is supposed to be started.\",\"testName\":\"JOB_TRACKER_SCM_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_BAD\",\"severity\":\"CRITICAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_UNEXPECTED_EXITS has become good: This role encountered 0 unexpected exit(s) in the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_UNEXPECTED_EXITS\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_FILE_DESCRIPTOR has become good: Open file descriptors: 244. File descriptor limit: 32,768. Percentage in use: 0.74%.\",\"testName\":\"JOB_TRACKER_FILE_DESCRIPTOR\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_SWAP_MEMORY_USAGE has become good: 0 B of swap memory is being used by this role's process.\",\"testName\":\"JOB_TRACKER_SWAP_MEMORY_USAGE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE has become good: This role's Log Directory (/var/log/hadoop-0.20-mapreduce) is on a filesystem with more than 20.00% of its space free.\",\"testName\":\"JOB_TRACKER_LOG_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HOST_HEALTH has become good: The health of this role's host is good.\",\"testName\":\"JOB_TRACKER_HOST_HEALTH\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_WEB_METRIC_COLLECTION has become good: The web server of this role is responding with metrics. The most recent collection took 49 millisecond(s).\",\"testName\":\"JOB_TRACKER_WEB_METRIC_COLLECTION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_GC_DURATION has become good: Average time spent in garbage collection was 0 second(s) (0.00%) per minute over the previous 5 minute(s).\",\"testName\":\"JOB_TRACKER_GC_DURATION\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_GOOD\",\"severity\":\"INFORMATIONAL\"}", "{\"content\":\"The health test result for JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE has become disabled: Test disabled because role is not configured to dump heap when out of memory. Test of whether this role's heap dump directory has enough free space.\",\"testName\":\"JOB_TRACKER_HEAP_DUMP_DIRECTORY_FREE_SPACE\",\"eventCode\":\"EV_ROLE_HEALTH_CHECK_DISABLED\",\"severity\":\"INFORMATIONAL\"}" ],
+        "SERVICE_DISPLAY_NAME" : [ "MAPREDUCE-1" ],
+        "HOSTS" : [ "myCluster.com" ]
+      }
+    }
+  },
+  "header" : {
+    "type" : "alert",
+    "version" : 2
+  }
+} ]
