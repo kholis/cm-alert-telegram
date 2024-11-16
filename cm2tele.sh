@@ -43,6 +43,16 @@ sed -i "s/The health of this role's host is bad. //g" $col2
 sed -i 's/The following health tests are bad: //g' $col2
 sed -i 's/The health of //g' $col2
 sed -i 's/has become bad/is bad/g' $col2
+sed -i 's/Become Bad/is bad/g' $col2
+sed -i 's/Percent healthy or concerning:/Concerning:/g' $col2
+sed -i 's/Percent healthy:/Health:/g' $col2
+sed -i 's/Critical threshold:/Threshold:/g' $col2
+sed -i 's/_HOST_HEALTH//g' $col2
+sed -i 's/_HEALTHY//g' $col2
+sed -i 's/_HEALTH//g' $col2
+sed -i 's/This role is//g' $col2
+sed -i "s/This role's//g" $col2
+#sed -i 's///g' $col2
 
 # Telegram Markdown escape char on col2
 sed -i 's/_/\\_/g' ${col2}
