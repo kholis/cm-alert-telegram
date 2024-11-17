@@ -21,7 +21,12 @@ alert_file="${BASE_DIR}/${filename}"
 #alert_length=`cat ${alert_file} | jq length`
 
 # Parse alert
-cat ${alert_file} | jq '.[].body.alert| .source as $URL | .content as $DTL | .attributes | select (.CURRENT_HEALTH_SUMMARY | contains(["RED"])) | .ALERT_SUMMARY, $DTL, .SERVICE_DISPLAY_NAME, .CLUSTER_DISPLAY_NAME, $URL' | sed -e 's/\[//g' | sed -e 's/\]//g' | sed '/^[[:space:]]*$/d' | sed -e 's/^[[:space:]]*//' | sed -e "s/${CM_PORT}.*/${CM_PORT}\"\n/g" > ${col2}
+cat ${alert_file} | jq '.[].body.alert
+| .source as $URL 
+| .content as $DTL 
+| .attributes 
+| select (.CURRENT_HEALTH_SUMMARY | contains(["RED"])) 
+| .ALERT_SUMMARY, $DTL, .SERVICE_DISPLAY_NAME, .CLUSTER_DISPLAY_NAME, $URL' | grep -o '"[^"]\+"' | sed -e "s/${CM_PORT}.*/${CM_PORT}\"\n/g" > ${col2}
 
 # Get number of alert
 alert_length=`grep ${CM_PORT} ${col2} | wc -l`
