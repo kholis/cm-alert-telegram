@@ -4,6 +4,10 @@ Cloudera Manager alert script to Telegram Group
 # Screenshoot
 ![](screenshot.png)
 
+# Prerequisite
+- jq
+- curl
+
 # Installation
 ## 1. Download Script
 ```
