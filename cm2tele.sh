@@ -29,6 +29,7 @@ cat ${alert_file} | jq '.[].body.alert
 | select(.content | contains("Health test changes:") | not)
 | select(.content | contains("Canary test failed") | not)
 | select(.content | contains("NIFI_NODE_CONNECTIVITY") | not)
+| select(.content | contains("SWAP_MEMORY_USAGE") | not)
 | .attributes 
 | select (.CURRENT_HEALTH_SUMMARY | contains(["RED"])) 
 | .ALERT_SUMMARY, $DTL, .SERVICE_DISPLAY_NAME, .CLUSTER_DISPLAY_NAME, $URL' | grep -o '"[^"]\+"' | sed -e "s/${CM_PORT}.*/${CM_PORT}\"\n/g" > ${col2}
