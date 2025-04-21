@@ -4,7 +4,8 @@ BASE_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # Please edit this
 BOT_TOKEN="XXXXXXXX"
 CHAT_ID="1234567890"
-CM_PORT=7180 # Secure: 7183, NonSecure: 7180
+TOPIC_ID=""           # Optional. For supergroup with topic only.
+CM_PORT=7180          # CM NonSecure: 7180, CM Secure: 7183
 #export https_proxy=http://proxy.corporate.com:8080
 
 # Define var
@@ -101,8 +102,16 @@ paste -d " " $col1 $col2 > ${alert_tele}
 if [ -s ${alert_tele} ]; then
   sed -i '1s/^/\n/' ${alert_tele}
   sed -i '1s/^/🧨 *CM Alerts:*\n/' ${alert_tele}
-  curl -X POST https://api.telegram.org/bot${BOT_TOKEN}/sendMessage \
-       -d "chat_id=-${CHAT_ID}" \
-       -d "parse_mode=MARKDOWN" \
-       --data-urlencode "text=$(cat ${alert_tele})"
+  if [ "${TOPIC_ID}" == "" ]; then
+    curl -X POST https://api.telegram.org/bot${BOT_TOKEN}/sendMessage \
+         -d "chat_id=-${CHAT_ID}" \
+         -d "parse_mode=MARKDOWN" \
+         --data-urlencode "text=$(cat ${alert_tele})"
+  else
+    curl -X POST https://api.telegram.org/bot${BOT_TOKEN}/sendMessage \
+         -d "chat_id=-${CHAT_ID}" \
+         -d "message_thread_id=${TOPIC_ID}" \
+         -d "parse_mode=MARKDOWN" \
+         --data-urlencode "text=$(cat ${alert_tele})"
+  fi
 fi
